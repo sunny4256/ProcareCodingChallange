@@ -79,9 +79,9 @@ The Address Validation Service is a robust solution designed to validate merchan
 
 ## Run the application
 
-    ```bash
-    dotnet run
-    ```
+```bash
+dotnet run
+```
 
 ## Logging
 
