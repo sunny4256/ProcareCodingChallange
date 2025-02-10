@@ -28,8 +28,6 @@ Additional features include:
 3. [Usage](#usage)
 4. [Logging](#logging)
 5. [Error Handling](#error-handling)
-6. [Development Notes](#development-notes)
-7. [Further Improvements](#further-improvements)
 
 ---
 
@@ -51,19 +49,19 @@ The Address Validation Service is a robust solution designed to validate merchan
 
 ### Prerequisites
 
-- .NET Core (version 6.0 or higher)
+- .NET Core (version 8.0 or higher)
 - `Microsoft.Extensions.Http.Resilience` library for resilience patterns
 
 ### Steps
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/address-validation-service.git
+   git clone https://github.com/sunny4256/ProcareCodingChallange.git
    ```
 2. Navigate to the project directory:
 
    ```bash
-   cd address-validation-service
+   cd ProcareCodingChallange
 
    ```
 
@@ -82,4 +80,13 @@ The Address Validation Service is a robust solution designed to validate merchan
 ## Run the application
 
     ```bash
-    dotnet run --project AddressValidationService
+    dotnet run
+    ```
+
+## Logging
+
+I have used Serilog logger to log to file and console. The configuration handles to create the file per each minute.
+
+## Error-handling
+
+Used custom expection handler to handle the 5XX errors, we use use this similar pattern to handle various exceptions
